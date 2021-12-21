@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-21 14:38:18
+ * @LastEditTime: 2021-12-21 18:14:32
  * @Description: file content
  * @FilePath: \nodeTest\06_buffer.js
  */
@@ -86,3 +86,24 @@ const copy = JSON.parse(json, (k,v) => v&&v.type == 'Buffer' ? Buffer.from(v.dat
 
 console.log('copy',copy)
 
+// Buffer 缓冲区合并
+
+const buf10 = Buffer.from('前端')
+
+const buf11 = Buffer.from('攻城狮')
+
+const buf12 = Buffer.concat([buf10,buf11])
+
+console.log('buf12', buf12.toString())
+
+// Buffer 缓存区对比
+
+const buf13 = Buffer.from('少林寺驻武当山办事处')
+
+const buf14 = Buffer.from('少林寺驻武当山办事处大神父王喇嘛')
+
+const result1 = buf13.compare(buf14)
+const result2 = buf14.compare(buf13)
+
+console.log('result1',result1)
+console.log('result2',result2)
