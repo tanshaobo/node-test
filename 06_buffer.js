@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-18 14:08:15
+ * @LastEditTime: 2021-12-21 14:20:20
  * @Description: file content
  * @FilePath: \nodeTest\06_buffer.js
  */
@@ -49,3 +49,30 @@ console.log('buf5',buf5)
 // 创建一个包含Latin-1字节 [0x74, 0xc3, 0xa9, 0x73, 0x74] 的 Buffer
 const buf6 = Buffer.from('tést', 'latin1')
 console.log('buf6',buf6)
+
+// Buffer 写入缓存区
+const buf7 = Buffer.alloc(256)
+
+len = buf7.write('www.w3cschool.com')
+
+console.log(`buf写入字节数:${len}`)
+
+// Buffer 读取缓存区
+
+const buf8 = Buffer.alloc(26)
+
+for(let i = 0; i< 26; i++){
+  buf8[i] = i + 97
+}
+
+console.log('buf8',buf8)
+
+console.log('buf8',buf8.toString('ascii'))
+
+console.log('buf8',buf8.toString('ascii', 7))
+
+console.log('buf8',buf8.toString('ascii',7,14))
+
+const buf9 = Buffer.from([0x1,0x2,0x3,0x4,0x5])
+
+console.log('buf9', buf9)
