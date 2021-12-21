@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-21 14:20:20
+ * @LastEditTime: 2021-12-21 14:38:18
  * @Description: file content
  * @FilePath: \nodeTest\06_buffer.js
  */
@@ -73,6 +73,16 @@ console.log('buf8',buf8.toString('ascii', 7))
 
 console.log('buf8',buf8.toString('ascii',7,14))
 
+// Buffer 转JSON
 const buf9 = Buffer.from([0x1,0x2,0x3,0x4,0x5])
 
 console.log('buf9', buf9)
+
+const json = JSON.stringify(buf9)
+
+console.log('json',json)
+
+const copy = JSON.parse(json, (k,v) => v&&v.type == 'Buffer' ? Buffer.from(v.data) : v)
+
+console.log('copy',copy)
+
