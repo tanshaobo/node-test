@@ -2,13 +2,14 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-21 18:14:32
+ * @LastEditTime: 2021-12-22 11:19:35
  * @Description: file content
  * @FilePath: \nodeTest\06_buffer.js
  */
 
 /**
  * Buffer 与字符编码
+ * buffer数组采用不同编码读取
 */
 const buf = Buffer.from('w3cschool', 'ascii')
 
@@ -50,14 +51,18 @@ console.log('buf5',buf5)
 const buf6 = Buffer.from('tést', 'latin1')
 console.log('buf6',buf6)
 
-// Buffer 写入缓存区
+/** 
+ * Buffer 写入缓冲区
+*/ 
 const buf7 = Buffer.alloc(256)
 
 len = buf7.write('www.w3cschool.com')
 
 console.log(`buf写入字节数:${len}`)
 
-// Buffer 读取缓存区
+/**
+ *  Buffer 读取缓冲区
+ */
 
 const buf8 = Buffer.alloc(26)
 
@@ -73,7 +78,9 @@ console.log('buf8',buf8.toString('ascii', 7))
 
 console.log('buf8',buf8.toString('ascii',7,14))
 
-// Buffer 转JSON
+/**
+ * Buffer 转JSON
+*/ 
 const buf9 = Buffer.from([0x1,0x2,0x3,0x4,0x5])
 
 console.log('buf9', buf9)
@@ -86,7 +93,9 @@ const copy = JSON.parse(json, (k,v) => v&&v.type == 'Buffer' ? Buffer.from(v.dat
 
 console.log('copy',copy)
 
-// Buffer 缓冲区合并
+/** 
+ * Buffer 缓冲区合并
+*/
 
 const buf10 = Buffer.from('前端')
 
@@ -96,7 +105,10 @@ const buf12 = Buffer.concat([buf10,buf11])
 
 console.log('buf12', buf12.toString())
 
-// Buffer 缓存区对比
+/** 
+ * Buffer 缓冲区对比
+ * 对比结果 1 0 -1 表示的是排序 之前 之后 或者 相同
+*/ 
 
 const buf13 = Buffer.from('少林寺驻武当山办事处')
 
