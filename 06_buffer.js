@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-23 11:26:53
+ * @LastEditTime: 2021-12-23 11:29:21
  * @Description: file content
  * @FilePath: \nodeTest\06_buffer.js
  */
@@ -145,3 +145,10 @@ const buf17 = Buffer.from('zxcvbnm')
 console.log('buf17',buf17)
 
 console.log(buf17.slice(2,5).toString(),buf17.toString())
+
+/**
+ * Buffer 缓冲区长度
+ */
+
+const buf18 = Buffer.from('asdfghjkl')
+console.log('buf18',buf18.length)
