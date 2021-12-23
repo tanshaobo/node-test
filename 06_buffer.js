@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-23 10:19:18
+ * @LastEditTime: 2021-12-23 11:26:53
  * @Description: file content
  * @FilePath: \nodeTest\06_buffer.js
  */
@@ -122,7 +122,7 @@ console.log('result2',result2)
 
 /**
  * Buffer 拷贝缓冲区
- * 根据返回结果，类似full 从指定位置开始填充，填充到任一长度终止位置
+ * 根据返回结果，类似数组fullfill 从指定位置开始填充，填充到任一长度终止位置
  */
 
 const buf15 = Buffer.from('abcd')
@@ -135,3 +135,13 @@ console.log('buf16',buf16)
 buf16.copy(buf15, 2)
 
 console.log(buf15.toString())
+
+/**
+ * Buffer 裁剪缓冲区 类似字符串slice
+ */
+
+const buf17 = Buffer.from('zxcvbnm')
+
+console.log('buf17',buf17)
+
+console.log(buf17.slice(2,5).toString(),buf17.toString())
