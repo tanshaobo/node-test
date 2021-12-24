@@ -2,9 +2,12 @@
  * @Author: tanshaobo
  * @Date: 2021-12-24 16:45:38
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-24 16:49:31
+ * @LastEditTime: 2021-12-24 16:53:59
  * @Description: node 函数
  * @FilePath: \nodeTest\09_function.js
+ */
+/**
+ * node 函数是以函数作为其他函数参数
  */
 
 // 以http为例
