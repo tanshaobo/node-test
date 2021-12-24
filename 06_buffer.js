@@ -2,13 +2,12 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-23 11:29:21
- * @Description: file content
+ * @LastEditTime: 2021-12-24 09:46:12
+ * @Description: Buffer 与字符编码
  * @FilePath: \nodeTest\06_buffer.js
  */
 
 /**
- * Buffer 与字符编码
  * buffer数组采用不同编码读取
 */
 const buf = Buffer.from('w3cschool', 'ascii')

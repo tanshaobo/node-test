@@ -2,8 +2,8 @@
  * @Author: tanshaobo
  * @Date: 2021-12-23 16:01:46
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-23 16:03:44
- * @Description: file content
+ * @LastEditTime: 2021-12-24 09:47:40
+ * @Description: 链式流 -- 解压
  * @FilePath: \nodeTest\07_stream3.js
  */
 

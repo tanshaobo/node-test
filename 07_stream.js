@@ -2,8 +2,8 @@
  * @Author: tanshaobo
  * @Date: 2021-12-23 14:27:52
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-23 16:01:35
- * @Description: file content
+ * @LastEditTime: 2021-12-24 09:46:40
+ * @Description: 流
  * @FilePath: \nodeTest\07_stream.js
  */
 

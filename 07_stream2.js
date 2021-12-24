@@ -2,8 +2,8 @@
  * @Author: tanshaobo
  * @Date: 2021-12-23 15:58:12
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-23 16:00:12
- * @Description: file content
+ * @LastEditTime: 2021-12-24 09:47:22
+ * @Description: 链式流 -- 压缩
  * @FilePath: \nodeTest\07_stream2.js
  */
 
