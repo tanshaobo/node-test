@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2021-12-28 10:09:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-29 11:08:20
+ * @LastEditTime: 2021-12-29 11:16:57
  * @Description: node util
  * @FilePath: \nodeTest\12_util.js
  */
@@ -58,3 +58,13 @@ function Person(){
 const obj = new Person()
 console.log(util.inspect(obj))
 console.log(util.inspect(obj,true))
+
+// util.isArray(object) 判断数组
+console.log('[]',util.isArray([]))
+console.log('{}',util.isArray({}))
+
+// util.isRegExp(object) 判断正则
+console.log('RegExp', util.isRegExp(/\d/))
+
+// util.isDate(new Date())
+console.log('date',util.isDate(new Date()))
