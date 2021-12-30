@@ -7,7 +7,7 @@ http.createServer((request, response) => {
   // 内容类型： text/plain
   response.writeHead(200, {'Content-Type':'text/plain'})
   // 发送响应数据 
-  response.end('hello\n')
-}).listen(8888)
+  response.end('hello, this is a node app')
+}).listen(9527)
 
-console.log('Server running at http://127.0.0.1:8888')
+console.log('Server running at http://127.0.0.1:9527')
