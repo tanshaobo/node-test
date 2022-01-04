@@ -2,36 +2,10 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-01-04 18:05:10
+ * @LastEditTime: 2022-01-04 18:18:07
  * @Description: Buffer 与字符编码
  * @FilePath: \nodeTest\04_buffer\06_buffer.js
  */
-/** 
- * Buffer 写入缓冲区
-*/ 
-const buf7 = Buffer.alloc(256)
-
-len = buf7.write('www.w3cschool.com')
-
-console.log(`buf写入字节数:${len}`)
-
-/**
- *  Buffer 读取缓冲区
- */
-
-const buf8 = Buffer.alloc(26)
-
-for(let i = 0; i< 26; i++){
-  buf8[i] = i + 97
-}
-
-console.log('buf8',buf8)
-
-console.log('buf8',buf8.toString('ascii'))
-
-console.log('buf8',buf8.toString('ascii', 7))
-
-console.log('buf8',buf8.toString('ascii',7,14))
 
 /**
  * Buffer 转JSON
