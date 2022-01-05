@@ -2,19 +2,15 @@
  * @Author: tanshaobo
  * @Date: 2021-12-23 14:27:52
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-24 09:46:40
- * @Description: 流
- * @FilePath: \nodeTest\07_stream.js
- */
-
-/**
- * 读取流
+ * @LastEditTime: 2022-01-05 13:06:25
+ * @Description: 流 -读取流
+ * @FilePath: \nodeTest\05_stream\stream_01.js
  */
 const fs = require('fs')
 
 let data = ''
 // 创建可读流
-const readerStream = fs.createReadStream('input.txt')
+const readerStream = fs.createReadStream('05_stream/input.txt')
 
 // 设置编码为utf8
 readerStream.setEncoding('UTF8')
@@ -34,28 +30,6 @@ readerStream.on('error',err => {
 })
 
 console.log('readerStream END')
-/**
- * 写入流
- */
-// 创建可写入的流
-// let str = '宝塔镇人妖'
-const writeStream =fs.createWriteStream('output.txt')
-
-// writeStream.write(str,'UTF8')
-
-// 标记文档末尾
-writeStream.end()
-
-// 处理流事件 -->finish end and error
-writeStream.on('finish', ()=>{
-  console.log('写入完成')
-})
-
-writeStream.on('error',err => {
-  console.log(err.stack)
-})
-
-console.log('writeStream END')
 
 /**
  * 管道流
