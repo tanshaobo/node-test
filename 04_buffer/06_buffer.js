@@ -2,38 +2,10 @@
  * @Author: tanshaobo
  * @Date: 2021-12-15 14:17:17
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-01-04 18:18:07
+ * @LastEditTime: 2022-01-05 10:53:23
  * @Description: Buffer 与字符编码
  * @FilePath: \nodeTest\04_buffer\06_buffer.js
  */
-
-/**
- * Buffer 转JSON
-*/ 
-const buf9 = Buffer.from([0x1,0x2,0x3,0x4,0x5])
-
-console.log('buf9', buf9)
-
-const json = JSON.stringify(buf9)
-
-console.log('json',json)
-
-const copy = JSON.parse(json, (k,v) => v&&v.type == 'Buffer' ? Buffer.from(v.data) : v)
-
-console.log('copy',copy)
-
-/** 
- * Buffer 缓冲区合并
-*/
-
-const buf10 = Buffer.from('前端')
-
-const buf11 = Buffer.from('攻城狮')
-
-const buf12 = Buffer.concat([buf10,buf11])
-
-console.log('buf12', buf12.toString())
-
 /** 
  * Buffer 缓冲区对比
  * 对比结果 1 0 -1 表示的是排序 之前 之后 或者 相同
