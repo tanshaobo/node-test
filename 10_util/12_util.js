@@ -2,38 +2,12 @@
  * @Author: tanshaobo
  * @Date: 2021-12-28 10:09:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-01-06 13:41:17
+ * @LastEditTime: 2022-01-06 13:45:01
  * @Description: node util
  * @FilePath: \nodeTest\10_util\12_util.js
  */
 
 const util = require('util')
-
-// util.inherits 实现对象间原型继承的函数
-function Base(){
-  this.name = 'base'
-  this.base = 1991
-  this.sayHello = function(){
-    console.log('Hello ' + this.name)
-  }
-}
-
-Base.prototype.showName = function(){
-  console.log(this.name)
-}
-
-function Sub() {
-  this.name = 'sub'
-}
-
-util.inherits(Sub, Base)
-const objBase = new Base()
-objBase.showName()
-objBase.sayHello()
-
-const objSub = new Sub()
-objSub.showName()
-console.log(objSub.name)
 
 // util.inspect 将任意对象转化为字符串
 function Person(){
