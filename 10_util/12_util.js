@@ -2,24 +2,12 @@
  * @Author: tanshaobo
  * @Date: 2021-12-28 10:09:05
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-29 11:16:57
+ * @LastEditTime: 2022-01-06 13:41:17
  * @Description: node util
- * @FilePath: \nodeTest\12_util.js
+ * @FilePath: \nodeTest\10_util\12_util.js
  */
 
 const util = require('util')
-
-// util.callbackify 将异步函数转化为遵循异常优先的回调函数
-
-async function fn(){
-  return Promise.reject(null)
-} 
-
-const callbackFuntion = util.callbackify(fn)
-
-callbackFuntion((err, ret) => {
-  err && err.hasOwnProperty('reason') && err.reason == null
-})
 
 // util.inherits 实现对象间原型继承的函数
 function Base(){
