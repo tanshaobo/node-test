@@ -2,35 +2,12 @@
  * @Author: tanshaobo
  * @Date: 2021-12-29 11:24:04
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-01-06 13:55:25
+ * @LastEditTime: 2022-01-06 14:55:05
  * @Description: file
  * @FilePath: \nodeTest\11_file\13_fs.js
  */
 
 const fs = require('fs')
-
-// 异步打开文件
-console.log('准备打开文件')
-fs.open('11_file/input.txt', 'r+', function(err, fd){
-  if(err){
-    return console.error(err)
-  }
-  console.log(fd)
-  console.log('文件打开成功')
-})
-// 获取文件信息
-fs.stat('/Users/MFHJ-DZ-001-079/myproject/nodeTest/13_fs.js', function(err, stats){
-  console.log(stats.isFile())
-})
-
-fs.stat('input.txt', function(err, stats){
-  if(err){
-    return console.log(err)
-  }
-  console.log("读取文件信息成功！")
-  console.log(`是否为文件（isFile）？ ${stats.isFile()}`)
-  console.log(`是否为目录（isDirectory）？ ${stats.isDirectory()}`)
-})
 
 // 写入文件
 fs.writeFile('input.txt', '我是通过fs.writeFile写入文件的内容', function(err){
