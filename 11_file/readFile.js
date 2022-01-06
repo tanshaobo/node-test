@@ -2,9 +2,9 @@
  * @Author: tanshaobo
  * @Date: 2022-01-06 13:56:00
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-01-06 14:36:43
- * @Description: 读取文件
- * @FilePath: \nodeTest\11_file\file_01.js
+ * @LastEditTime: 2022-01-06 15:22:23
+ * @Description: 读取文件内容
+ * @FilePath: \nodeTest\11_file\readFile.js
  */
 const fs = require("fs")
 

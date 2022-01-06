@@ -2,28 +2,12 @@
  * @Author: tanshaobo
  * @Date: 2021-12-29 11:24:04
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-01-06 14:55:05
+ * @LastEditTime: 2022-01-06 15:16:13
  * @Description: file
  * @FilePath: \nodeTest\11_file\13_fs.js
  */
 
 const fs = require('fs')
-
-// 写入文件
-fs.writeFile('input.txt', '我是通过fs.writeFile写入文件的内容', function(err){
-  if(err){
-    return console.error(err)
-  }
-  console.log("数据写入成功")
-  console.log("-----------我是分割线----------")
-  console.log("读取写入的数据")
-  fs.readFile('input.txt', function(err,data){
-    if(err){
-      return console.log(err)
-    }
-    console.log(`异步读取文件数据：${data.toString()}`)
-  })
-})
 
 // 读取文件
 const buf = new Buffer.alloc(1024)
