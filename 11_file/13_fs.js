@@ -2,16 +2,16 @@
  * @Author: tanshaobo
  * @Date: 2021-12-29 11:24:04
  * @LastEditors: tanshaobo
- * @LastEditTime: 2021-12-30 10:33:05
+ * @LastEditTime: 2022-01-06 13:55:25
  * @Description: file
- * @FilePath: \nodeTest\13_fs.js
+ * @FilePath: \nodeTest\11_file\13_fs.js
  */
 
 const fs = require('fs')
 
 // 异步打开文件
 console.log('准备打开文件')
-fs.open('input.txt', 'r+', function(err, fd){
+fs.open('11_file/input.txt', 'r+', function(err, fd){
   if(err){
     return console.error(err)
   }
