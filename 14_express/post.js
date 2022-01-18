@@ -2,7 +2,7 @@
  * @Author: tanshaobo
  * @Date: 2022-01-18 11:01:28
  * @LastEditors: tanshaobo
- * @LastEditTime: 2022-01-18 11:23:20
+ * @LastEditTime: 2022-01-18 13:48:12
  * @Description: express post请求
  * @FilePath: \nodeTest\14_express\post.js
  */
@@ -15,7 +15,7 @@ const bodyParser = require('body-parser')
 
 const urlencodedParser = bodyParser.urlencoded({extended: false})
 
-app.use(express.static('public'))
+app.use(express.static('14_express'))
 
 app.get('/index.html',(req, res) => {
 

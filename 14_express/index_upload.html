@@ -1,0 +1,24 @@
+<!--
+ * @Author: tanshaobo
+ * @Date: 2022-01-18 11:28:31
+ * @LastEditors: tanshaobo
+ * @LastEditTime: 2022-01-18 14:11:43
+ * @Description: express upload演示
+ * @FilePath: \nodeTest\14_express\index_upload.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h3>文件上传</h3>  
+  <form action="/file_upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" size="50" multiple="multiple">
+    <hr>
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>
