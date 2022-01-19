@@ -1,0 +1,20 @@
+{
+  "mengde": {
+    "name": "温迪",
+    "type": "风",
+    "weapon": "弓",
+    "id": 1
+  },
+  "liyue": {
+    "name": "胡桃",
+    "type": "火",
+    "weapon": "长枪",
+    "id": 2
+  },
+  "daoqi": {
+    "name": "荒泷一斗",
+    "type": "岩",
+    "weapon": "大剑",
+    "id": 3
+  }
+}
