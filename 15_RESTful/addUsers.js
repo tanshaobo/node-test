@@ -29,5 +29,5 @@ app.get("/addUsers", (req, res) => {
 const server = app.listen(9527, () => {
   const host = server.address().address
   const port = server.address().port
-  console.log('应用实例，访问地址为：http://127.0.0.1:9527', host, port)
+  console.log('应用实例，访问地址为：http://127.0.0.1:9527/index_upload', host, port)
 })
